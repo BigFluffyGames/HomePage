@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my GeoCities page!">
+    <title>✨ Hello World ✨</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #000080;
+            background-image:
+                radial-gradient(circle, #ffffff 1px, transparent 1px),
+                radial-gradient(circle, #ffff00 1px, transparent 1px);
+            background-size: 50px 50px, 80px 80px;
+            background-position: 0 0, 25px 25px;
+            margin: 0;
+            padding: 20px;
+            animation: sparkle 3s infinite;
+        }
+
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                background-position: 0 0, 25px 25px;
+            }
+
+            50% {
+                background-position: 10px 10px, 35px 35px;
+            }
+        }
+
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 72px;
+            background: linear-gradient(45deg,
+                    #ff0000, #ff7f00, #ffff00, #00ff00,
+                    #0000ff, #4b0082, #9400d3);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s ease infinite, blink 1.5s infinite;
+            text-shadow: 2px 2px #000000;
+            margin: 20px 0;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            49%,
+            100% {
+                opacity: 1;
+            }
+
+            50%,
+            99% {
+                opacity: 0.7;
+            }
+        }
+
+        marquee {
+            background-color: #ff00ff;
+            color: #ffff00;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            border: 3px dashed #00ffff;
+            margin: 20px 0;
+        }
+
+        .welcome {
+            background-color: #00ffff;
+            color: #ff0000;
+            padding: 15px;
+            border: 5px ridge #ffff00;
+            font-size: 20px;
+            margin: 20px 0;
+            box-shadow: 5px 5px #ff00ff;
+        }
+
+        .counter {
+            background-color: #ffff00;
+            color: #000000;
+            padding: 10px;
+            border: 3px solid #ff0000;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .stars {
+            font-size: 30px;
+            animation: rotate 2s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .construction {
+            background-color: #ffff00;
+            color: #000000;
+            padding: 10px;
+            border: 5px double #ff0000;
+            margin: 20px 0;
+            font-size: 16px;
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+
+            0%,
+            100% {
+                background-color: #ffff00;
+                color: #000000;
+            }
+
+            50% {
+                background-color: #ff0000;
+                color: #ffff00;
+            }
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>✨ HELLO WORLD ✨</h1>
+
+        <marquee behavior="scroll" direction="left">
+            ⭐ Welcome to my AWESOME homepage! ⭐ This site is best viewed in Netscape Navigator! ⭐
+        </marquee>
+
+        <div class="welcome">
+            <span class="stars">✨</span>
+            <strong>WELCOME TO MY WEBSITE!!!</strong>
+            <span class="stars">✨</span>
+            <br>
+            You are visitor number <span style="color: #0000ff;">#1337</span>!!!
+        </div>
+
+        <div class="counter">
+            👁️ You are visitor number: <span
+                style="background-color: #000000; color: #00ff00; padding: 5px;">001337</span> 👁️
+        </div>
+
+        <div class="construction">
+            🚧 <blink>UNDER CONSTRUCTION</blink> 🚧
+            <br>
+            This page is always being updated with cool new stuff!
+        </div>
+
+        <p style="color: #ffffff; font-size: 18px; margin: 20px;">
+            <span style="color: #ff00ff;">●</span>
+            <span style="color: #00ffff;">●</span>
+            <span style="color: #ffff00;">●</span>
+            Thanks for visiting my page!
+            <span style="color: #ffff00;">●</span>
+            <span style="color: #00ffff;">●</span>
+            <span style="color: #ff00ff;">●</span>
+        </p>
+
+        <marquee behavior="scroll" direction="right" scrollamount="3">
+            🌟 Don't forget to sign my guestbook! 🌟
+        </marquee>
+    </div>
+</body>
+
+</html>
